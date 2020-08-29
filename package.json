@@ -1,11 +1,13 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "dev": "env-cmd -f ./env/dev.env snowpack dev",
     "build": "snowpack build",
+    "build:dev": "env-cmd -f ./env/dev.env yarn build",
+    "build:accept": "env-cmd -f ./env/accept.env yarn build",
+    "build:prod": "env-cmd -f ./env/prod.env yarn build",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
-    "dev": "env-cmd -f ./env/dev.env yarn start"
+    "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
     "@material-ui/core": "^4.11.0",
