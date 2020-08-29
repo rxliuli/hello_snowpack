@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 import HelloPage from './pages/hello/HelloPage'
-import HelloProxyServerData from './pages/proxy/HelloProxyServerData'
+import HelloProxyServerData from './pages/hello/HelloProxyServerData'
 
 interface AppProps {}
 
