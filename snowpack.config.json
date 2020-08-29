@@ -1,10 +1,4 @@
 {
   "extends": "@snowpack/app-scripts-react",
-  "alias": {
-    "@app": "./src"
-  },
-  "proxy": {
-    "/api": "https://ym.ibingli.cn"
-  },
   "plugins": []
 }
