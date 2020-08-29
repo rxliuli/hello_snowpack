@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 import HelloPage from './pages/hello/HelloPage'
+import HelloProxyServerData from './pages/proxy/HelloProxyServerData'
 
 interface AppProps {}
 
@@ -12,6 +13,7 @@ function App({}: AppProps) {
       </header>
       <p>环境变量：{import.meta.env.SNOWPACK_PUBLIC_IBL_ENV}</p>
       <HelloPage />
+      <HelloProxyServerData />
       <Button>按钮</Button>
     </div>
   )

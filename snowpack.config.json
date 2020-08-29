@@ -3,5 +3,8 @@
   "alias": {
     "@app": "./src"
   },
+  "proxy": {
+    "/api": "https://ym.ibingli.cn"
+  },
   "plugins": []
 }
