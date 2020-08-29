@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 import HelloPage from './pages/hello/HelloPage'
 import HelloProxyServerData from './pages/hello/HelloProxyServerData'
+import HelloStyleModule from './pages/hello/HelloStyleModule'
 
 interface AppProps {}
 
@@ -14,7 +15,10 @@ function App({}: AppProps) {
       <p>环境变量：{import.meta.env.SNOWPACK_PUBLIC_IBL_ENV}</p>
       <HelloPage />
       <HelloProxyServerData />
-      <Button>按钮</Button>
+      <HelloStyleModule />
+      <Button variant={'contained'} color={'primary'}>
+        按钮
+      </Button>
     </div>
   )
 }
